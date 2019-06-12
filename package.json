@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/acecera/Natours/issues"
   },
-  "homepage": "https://github.com/acecera/Natours#readme"
+  "homepage": "https://github.com/acecera/Natours#readme",
+  "dependencies": {
+    "npm": "^6.9.0"
+  }
 }
