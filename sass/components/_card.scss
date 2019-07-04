@@ -1,11 +1,16 @@
 .card {
     perspective: 150rem;
-    
-    background-color: orangered;
-    height: 50rem;
-    transition: all .8s;
+    -moz-perspective: 150rem;
+
+    &__back {
+        background-color: orangered;
+        color: white;
+        font-size: 2rem;
+        height: 50rem;
+        transition: all .8s;
+    }
      
-    &:hover {
+    &:hover &__back {
         transform: rotateY(180deg);
     }
 }
