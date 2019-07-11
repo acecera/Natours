@@ -10,15 +10,15 @@
         to right bottom, 
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)), 
-        url(../img/nat-4.jpg); 
-        background-size: cover;
+    url(../img/nat-4.jpg); 
+    background-size: cover;
 
-        transform: skewY(-7deg);
-        margin-top: -9rem;
+    transform: skewY(-7deg);
+    margin-top: -9rem;
 
-        & > * {
-            transform: skewY(7deg);
-        }
+    & > * {
+        transform: skewY(7deg);
+    }
 }
 
 .section-tours {
