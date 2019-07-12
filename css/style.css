@@ -386,7 +386,7 @@ body {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: -4rem; }
+  top: -.4rem; }
   .form__radio-button::after {
     content: "";
     display: block;
@@ -396,7 +396,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     background-color: #55c57a;
     opacity: 0;
     transition: opacity .2s; }
@@ -454,9 +454,10 @@ body {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem;
-  color: #f7f7f7 .footer __logo-box;
-    color-text-align: center;
-    color-margin-bottom: 8rem; }
+  color: #f7f7f7; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -475,15 +476,16 @@ body {
     background-color: #333;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block; }
+    display: inline-block;
+    transition: all .2s; }
   .footer__link:hover, .footer__link:active {
     color: #fff;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(5deg) scale(1.2); }
+    transform: scale(1.1); }
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem;
-    width: 80%;
+    width: 40%;
     float: right; }
 
 .row {
@@ -532,6 +534,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56f, #28b485); }
 
 .section-about {
   background-color: #f7f7f7;
