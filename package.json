@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": ""
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,12 @@
   },
   "homepage": "https://github.com/acecera/Natours#readme",
   "dependencies": {
+    "concat": "^1.0.3",
     "lodash": "^4.17.14",
     "node-sass": "^4.12.0",
     "npm": "^6.10.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1"
   }
 }
